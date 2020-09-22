@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flirt - Contact Us</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+      <style>
+      @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap");
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  background-color: blueviolet;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+}
+.container {
+  font-family: "Tajawal", sans-serif;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: auto;
+}
+
+.logo {
+  float: left;
+}
+.search {
+  font-family: "Tajawal", sans-serif;
+  float: right;
+  padding: 35px;
+}
+#btn-search {
+  background-color: rgb(224, 12, 224);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 24px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#btn-search:hover {
+  color: white;
+  background-color: magenta;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+#place-search {
+  text-decoration: none;
+  outline: none;
+  border-radius: 35px;
+  background-color: white;
+  color: magenta;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  border: none;
+  text-shadow: 20px;
+  box-shadow: 20px;
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+}
+.main-menu {
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  text-align-last: center;
+  background-color: rgb(224, 12, 224);
+  font-size: bold;
+  font-family: "Tajawal", sans-serif;
+  border-radius: 35px;
+  font-weight: bolder;
+}
+.main-menu li:hover > .drop {
+  perspective: 1000px;
+}
+.main-menu li:hover > .drop li {
+  transform-origin: top center;
+  opacity: 0;
+}
+.main-menu li:hover > .drop li:nth-child(1) {
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: -150ms;
+}
+.main-menu li:hover > .drop li:nth-child(2) {
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 0ms;
+}
+.main-menu li:hover > .drop li:nth-child(3) {
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 150ms;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+.main-menu > ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+}
+.main-menu > ul > li {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+.main-menu > ul > li > a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  display: block;
+  align-items: center;
+  padding: 15px;
+  padding-right: 80px;
+  padding-left: 80px;
+  font-size: smaller bold;
+  border-radius: 35px;
+}
+.main-menu > ul > li > a:hover {
+  background-color: magenta;
+  color: white;
+  cursor: pointer;
+}
+.drop {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+}
+.drop > li > a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  display: block;
+  padding: 15px;
+  font-size: small;
+  background-color: darkmagenta;
+  padding-right: 91px;
+  padding-left: 91px;
+  font-size: smaller bold;
+  border-radius: 35px;
+}
+.drop > li > a:hover {
+  background-color: magenta;
+}
+.main-menu > ul > li:hover .drop {
+  display: block;
+}
+.main {
+  color: white;
+  padding-right: 18px;
+  text-align: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+main > p > a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: medium;
+  border-bottom: 2px solid white;
+}
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: blueviolet;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+}
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 13px 0px 0px 0px;
+  background-color: #000000;
+  align-items: center;
+  padding-bottom: 15px;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  border-radius: 35px;
+}
+footer p > a {
+  color: white;
+  text-decoration: none;
+}
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <img
+              style="width: 100px; height: 100px"
+              src="img/favicon.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <div class="search">
+          <form>
+            <input
+              type="search"
+              id="place-search"
+              name="s"
+              placeholder="ابحث في الموقع"
+            />
+            <input type="submit" value="بــحــث" id="btn-search" />
+          </form>
+          </header><!--Header-->
+        </div>
+        <div class="clearfix"></div>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li>
+              <a href="#">المنتجات</a>
+              <ul class="drop">
+                <li><a href="#">منتج 1</a></li>
+                <li><a href="#">منتج 2</a></li>
+                <li><a href="#">منتج 3</a></li>
+              </ul>
+            </li>
+            <li><a href="contact-us.html">اطلب الآن</a></li>
+          </ul>
+        </nav>
+        <!--Nav-->
+
+        
+            <section>
+                <article>
+                    <main class="main">
+                        <h1 style="font-weight: bold;">تواصل معنا الآن</h1>
+                        <p>
+                            الخدمة متوفرة من العاشرة صباحا حتي العاشرة مساءا . <br><br><br>
+                            <a href="tel:+201013936641">للتواصل معنا عبر الهاتف اضغط هنا</a><br><br>
+                            <a href="mailto:mr.er403@gmail.com">للتواصل معنا عبر البريد الالكتروني اضغط هنا</a>
+                        </p>
+                    </main>
+
+                </article>
+                
+            </section>
+        <footer>
+          <p>Copyright &copy; 2020 By <a href="https://www.facebook.com/MrEr403/" target="_blank">Sief Hesham</a> , All Rights Reserved</p>
+          
+        </footer>
+    </div>
+  </body>
+</html>
